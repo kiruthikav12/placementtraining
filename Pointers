@@ -1,0 +1,83 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+/*void swap(int *a,int *b)
+{
+    int temp=*a;
+    *a=*b;
+    *b=temp;
+    cout<<*a<<endl<<*b;
+}
+int main() {
+    int a=10;
+    int b=3;
+    swap(&a,&b);
+    cout<<a<<endl<<b;
+    
+}*/
+/*int main()
+{
+   char str[]= "Hello";
+   cout<<*(str+1);
+}*/
+/*int findmax(int*arr,int n )
+{
+    int max = *arr;
+    for(int i =1;i<n;i++)
+    {
+        if(*(arr+i)>max)
+        {
+            max=*(arr+i);
+        }
+    }
+    return max;
+}
+int main()
+{
+    int arr[5]={1,2,3,4,5};
+    int n = sizeof(arr)/sizeof(arr[0]);
+    cout<<findmax(arr,n)<<endl;
+}*/ 
+/*void reverse(char*d,char *a)
+{
+    while(*a!='\0')
+    {
+        *d = *a;
+        a++;
+        d++;
+    }
+    *d='\0';
+}
+int main()
+{
+ char a[]="hello";
+ char d[25];
+ reverse(d,a);
+ cout<<d<<endl;
+ return 0;
+}*/
+
+bool search (int *a,int n,int target)
+{
+    for(int i=0;i<n;i++)
+    {
+        if(*(a+i)==target)
+        {
+            return true;
+        }
+        
+    }
+    return false;
+}
+int main()
+{
+    int a[5]={1,2,3,4,5};
+    int target = 3;
+    int n = sizeof(a)/sizeof(a[0]);
+     if(search(a,n,target))
+     {
+         cout<<"Present";
+     }
+     else
+     cout<<"Not present";
+}
