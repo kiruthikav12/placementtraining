@@ -165,3 +165,22 @@ int main()
     }
     cout<<count;
 }
+
+
+//vowel replace
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    string a="My name is whatsoever";
+    int n=a.length();
+    
+    for(int i=0;i<n;i++)
+    {
+        if(a[i]=='a'||a[i]=='e'||a[i]=='i'||a[i]=='o'||a[i]=='u')
+        {
+        a[i]='&';
+        }
+        cout<<a[i];
+    }
+}
