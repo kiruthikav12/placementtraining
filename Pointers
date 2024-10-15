@@ -1,6 +1,7 @@
 // Online C++ compiler to run C++ program online
 #include <iostream>
 using namespace std;
+//Swapping using three variables
 /*void swap(int *a,int *b)
 {
     int temp=*a;
@@ -15,11 +16,15 @@ int main() {
     cout<<a<<endl<<b;
     
 }*/
+
+//string example
 /*int main()
 {
    char str[]= "Hello";
    cout<<*(str+1);
 }*/
+
+//max value in an array using pointer
 /*int findmax(int*arr,int n )
 {
     int max = *arr;
@@ -38,7 +43,9 @@ int main()
     int n = sizeof(arr)/sizeof(arr[0]);
     cout<<findmax(arr,n)<<endl;
 }*/ 
-/*void reverse(char*d,char *a)
+
+//copying a string 
+/*void copy(char*d,char *a)
 {
     while(*a!='\0')
     {
@@ -52,11 +59,12 @@ int main()
 {
  char a[]="hello";
  char d[25];
- reverse(d,a);
+ copy(d,a);
  cout<<d<<endl;
  return 0;
 }*/
 
+//checking if a value is present in an array
 bool search (int *a,int n,int target)
 {
     for(int i=0;i<n;i++)
