@@ -1,0 +1,67 @@
+// Online C++ compiler to run C++ program online
+#include <bits/stdc++.h>
+#include<cmath>
+using namespace std;
+/*int main() {
+    int n;
+    cin>>n;
+    if(n>=91&&n<=100)
+    cout<<"O Grade";
+    else if(n>=81&&n<=90)
+    cout<<"A Grade";
+    else if(n>=71&&n<=80)
+    cout<<"B Grade";
+    else if(n>=61&&n<=70)
+    cout<<"C Grade";
+    else if(n>=51&&n<=60)
+    cout<<"D Grade";
+    else 
+    cout<<"F Grade";
+    return 0;
+}*/
+/*int main(){
+int n;
+cin>>n;
+if(n%4==0 && n%100!=0)
+{
+    cout<<"Leap year";
+}
+else
+{
+    cout<<"Not leap year";
+}
+}*/
+
+
+/*int main()
+{
+    int treeno=10;
+    int row=3,col=4;
+    if((treeno>=1&& treeno <=col)||(treeno%col==1)||treeno%4==0)
+    {
+        cout<<"M";
+    }
+    else 
+    {
+        cout<<"A";
+    }
+    return 0;
+}*/
+
+
+int main()
+{
+          int a,b,c;
+          cin>>a>>b>>c;
+          double delta = ((b*b)-(4*a*c));
+          if(delta >= 0)
+          {
+              double root1 = (-b + sqrt(delta))/(2*a);
+              double root2 = (-b - sqrt(delta))/(2*a);
+              cout<<root1<<endl<<root2;
+          }
+          else
+          {
+              cout<<" Imgingary roots";
+          }
+}
