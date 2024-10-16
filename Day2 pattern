@@ -1,0 +1,95 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+//printing numebersin pyramid
+/*class HelloWorld {
+    public static void main(String[] args) {
+        int n = 3;
+        int m = 3;
+        for(int i=0;i<n;i++)
+        {
+            for(int j=0;j<i;j++)
+            {
+              System.out.print(i);
+            }
+        System.out.println();
+        }
+    }
+}*/
+
+//printing stars in pyramid
+/*class HelloWorld {
+    public static void main(String[] args) {
+        int n = 3;
+        int m = 3;
+        for(int i=0;i<n;i++)
+        {
+            for(int j=0;j<i;j++)
+            {
+              System.out.print("*");
+            }
+        System.out.println();
+        }
+    }
+}*/
+
+//printing square using stars
+/*class HelloWorld {
+    public static void main(String[] args) {
+        int n = 3;
+        int m = 3;
+        for(int i=0;i<n;i++)
+        {
+            for(int j=0;j<m;j++)
+            {
+              System.out.print("*");
+            }
+        System.out.println();
+        }
+    }
+}*/
+
+//hollow square
+/*class HelloWorld {
+    public static void main(String[] args) {
+        int n = 3;
+        int m = 3;
+        for(int i=0;i<n;i++)
+        {
+            for(int j=0;j<m;j++)
+            {
+                if(i==0||j==0||i==n-1||j==n-1)
+              System.out.print("*");
+              else
+              System.out.print(" ");
+            }
+        System.out.println();
+        }
+    }
+}*/
+
+// printing numbers in pyramid 1 2 3 
+/*class HelloWorld {
+    public static void main(String[] args) {
+        int n = 5;
+        int m = 6;
+        int count = 1;
+        int count1 = 2;
+        for(int i=1;i<=n;i++)
+        {
+            for(int j=1;j<=i;j++)
+            {
+              if(i%2!=0)
+              {
+              System.out.print(count+" ");
+              count+=2;
+              }
+              else
+              {
+              System.out.print(count1+" ");
+              count1+=2;
+              }
+            }
+        System.out.println();
+        }
+    }
+}
